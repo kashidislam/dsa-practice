@@ -17,10 +17,12 @@ public class BubbleSort {
         printArray(inputArray);
     }
 
+    // BUBBLE SORT ALGORITHM
+
     public static void bubbleSort(int [] a){
         for(int i = a.length-1; i >=1; i--){
             for(int j = 0; j < i; j++){
-                if(a[j] > a[j+1]){
+                if(a[j] > a[j+1]){  // SWAP IF THE CONDITION IS TRUE
                     int temp = a[j];
                     a[j] = a[j+1];
                     a[j+1] = temp;
